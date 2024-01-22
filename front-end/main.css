@@ -6,12 +6,19 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow: hidden;
+}
 /* nav bar */
 nav{
     display: flex;
     align-items: center;
     background-color: #002242;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: 0.6s;
 }
 figure.nav-logo{
     width: 8.75em;
@@ -26,26 +33,26 @@ nav ul{
     display: flex;
 }
 nav ul li{
-    margin-left: 32px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transform: translateY(20px);
     padding-bottom: 40px
 }
+nav ul li.active{
+    color: #FFC700;
+}
 nav ul li::after{
     content: "";
     display: block;
     position: absolute;
-    width: 7.09625em;
-    height: 1.53375em;
-    background-size: 7.09625em 1.53375em;
+    width: 100%;
+    min-width: 100px;
+    min-height: 40px;
+    background-size:100%;
     background-image: url('/front-end/assets/small-plane.svg');
-    right: 100%;
+    background-repeat: no-repeat;
     transition: 0.6s;
-}
-nav ul li:hover::after{
-    right: 0%;
 }
 span#lang-btn{
     height: 1.6875em;
@@ -56,6 +63,7 @@ span#lang-btn{
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    font-family: 'Anaheim', sans-serif;
 }
 #lang-btn .globe-icon{
     width: 1.6875em;
@@ -63,12 +71,6 @@ span#lang-btn{
     background-size: 1.6875em 1.6875em;
     background-image: url('/front-end/assets/Globe-icon.svg');
 
-}
-#lang-btn span:first-child{
-    padding-left: 6px;
-}
-#lang-btn span:last-child{
-    padding-right: 6px;
 }
 #lang-btn span:first-child,
 #lang-btn span:last-child{
@@ -78,3 +80,4 @@ span#lang-btn{
     justify-content: center;
     align-items: center;
 }
+/* End Nav */

@@ -1,0 +1,35 @@
+#lang-btn span:first-child{
+    padding-left: 6px;
+    background-color: #3FAEA5;
+}
+#lang-btn span:last-child{
+    padding-right: 6px;
+}
+nav ul li{
+    margin-left: 32px;
+    font-family: 'Abel', sans-serif;
+}
+nav ul li::after{
+    right: 100%;
+}
+nav ul li:hover::after{
+    right: 0%;
+}
+section.landing.switch{
+    transform: translateX(-50%);
+}
+.landing-btn{
+    right: 52%;
+}
+.landing-btn.switch{
+    right: 46%;
+    transform: rotate(180deg);
+}
+.plane-btn{
+    left: 25%;
+    transform: translateX(-50%);
+}
+.landing p{
+    transform: translateX(-50%);
+    left: 25%;
+}

@@ -1,0 +1,63 @@
+.trans-nav{
+    background-color: #00224200;
+}
+section.landing{
+    width: 200%;
+    height: 100vh;
+    position: relative;
+    transition: 0.6s;
+}
+section.landing .cover1{
+    background-image: url(/front-end//assets/landing-cover1.svg);
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+section.landing .cover2{}
+.landing-btn{
+    width: 4.375em;
+    height: 4.375em;
+    background-color: #1E425A;
+    border: 3px solid #3FAEA5;
+    border-radius: 50%;
+    background-image: url(/front-end/assets/landing-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+    transition-delay: 0.6s;
+}
+.plane-btn{
+    width: 4.5em;
+    height: 4.5em;
+    background-color: #1E425A;
+    border: 3px solid #3FAEA5;
+    border-radius: 50%;
+    background-image: url(/front-end/assets/plane-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -7px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    /* transition: 0.6s;
+    transition-delay: 0.6s; */
+    bottom: 3%;
+}
+.landing p{
+    position: absolute;
+    color: #FFBA00;
+    font-size: 5em;
+    top: 77%;
+    font-family:'La Belle Aurore', cursive;;
+}
+section{
+    border-bottom: #002242 solid 3px;
+    background-color: #FFC700;
+    height: 100vh;
+    box-sizing: border-box;
+}

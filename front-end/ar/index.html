@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="arabic.css">
     <link rel="stylesheet" href="/front-end/main.css">
+    <link rel="stylesheet" href="/front-end/home.css">
     <link rel="stylesheet" href="/front-end/normalize.css">
     <link rel="icon" href="/front-end/assets/small-logo.svg">
     <title>Star 2030</title>
-    <script>localStorage.setItem('sitelang','ar')</script>
+    <script>
+        localStorage.setItem('sitelang','ar')
+        localStorage.setItem('page','home');
+    </script>
 </head>
 <body>
-    <nav>
+    <nav class="trans-nav">
         <figure class="nav-logo"></figure>
         <ul class="nav-list">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Latest News</li>
-            <li>Our Customers</li>
-            <li>Who Are We?</li>
-            <li>Contact Us</li>
+            <li class="active" data-page="">الرئيسية</li>
+            <li data-page="services">الخدمات</li>
+            <li data-page="news">آخر الاخبار</li>
+            <li data-page="customers">عملائنا</li>
+            <li data-page="about">من نحن؟</li>
+            <li data-page="contact">تواصل معنا</li>
         </ul>
         <span id="lang-btn">
-            <span>EN</span>
-            <span style="background-color: #3FAEA5;"><figure class="globe-icon"></figure>AR</span>
+            <span style="padding-right: 6px;">EN</span>
+            <span><figure class="globe-icon"></figure>AR</span>
         </span>
     </nav>
+    <section class="landing">
+        <div class="cover1"><p>الطائرة و كأنك في المنزل</p></div>
+        <div class="cover2"></div>
+        <span class="landing-btn"></span>
+        <span class="plane-btn"></span>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
 </body>
 <script src="/front-end/script.js"></script>
+<script src="/front-end/home.js"></script>
 </html>

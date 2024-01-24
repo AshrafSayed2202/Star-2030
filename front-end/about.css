@@ -4,6 +4,7 @@
     background-position: center;
     background-size:cover ;
     display: flex;
+    overflow: hidden;
 }
 .about-text{
     display: flex;
@@ -18,14 +19,23 @@
 }
 .about-header{
     font-size: 3em;
-    font-family:'La Belle Aurore', cursive;
+    margin: 0 5%;
+    position: relative;
+}
+.about-header::after{
+    content: '';
+    background: url(/front-end/assets/about-arrow.svg) no-repeat;
+    width: 79px;
+    height: 79px;
+    display: block;
+    position: absolute;
+    top: 40%;
 }
 .about-paragraph{
     background: linear-gradient(269.88deg, rgba(22, 114, 127, 0.7) 0.11%, #1E425A 99.9%);
     border-radius: 50px;
     padding: 1em;
     font-size: 2em;
-    font-family: 'Abel', sans-serif;
     line-height: 1.5em;
 }
 .about-quote{
@@ -34,8 +44,10 @@
     border-radius: 50px;
     color: #FFBA00;
     font-size: 2em;
-    font-family: 'Abel', sans-serif;
     width: fit-content;
+    font-style: italic;
+    position: absolute;
+    bottom: 10%;
 }
 .about-aside{
     width: 40%;
@@ -50,17 +62,28 @@
     background-position: center ;
     background-image: url('/front-end/assets/about-logo.svg');
     background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.2;
 }
-.about-btn{
-    font-size: 2em;
-    font-family: 'Abel', sans-serif;
+.circle-text span{
+    position: absolute;
+    transform-origin: 0 270px;
+    font-size: 2.5em;
     color: #fff;
-    background-color: #1E425A;
-    padding: 0.5em;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.4s;
+    left: 50%;
 }
-.about-btn:hover{
-    transform: scale(1.1);
+.circle-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: roundtext 20s linear infinite;
+    font-family: 'Abel', sans-serif;
+}
+@keyframes roundtext {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }

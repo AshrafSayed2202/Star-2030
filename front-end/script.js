@@ -1,5 +1,5 @@
 var siteLang = localStorage.getItem('sitelang')
-document.getElementById('lang-btn').onclick = function(){
+document.getElementById('lang-btn').onclick = ()=>{
     if(localStorage.getItem('sitelang') == 'en'){
         localStorage.setItem('sitelang','ar')
         if(localStorage.getItem('page') == 'home'){

@@ -35,3 +35,31 @@ section.landing.switch{
     transform: translateX(50%);
     right: 25%;
 }
+.about-header::after{
+    right: 30%;
+    transform: rotateY(180deg);
+}
+.about-quote{
+    font-family: 'Abel', sans-serif;
+    right: 50%;
+    transform: translateX(50%);
+}
+.contact-card{
+    transform: translateX(120%);
+}
+.visit-card{
+    transform: translateX(120%);
+}
+.form-card{
+    transform: translateX(-120%);
+    position: relative;
+}
+.contact-phone::before,
+.contact-email::before,
+.visit-text::before,
+.contact-phone a.whatsapp{
+    transform: translateX(120%);
+}
+.contact-phone a.whatsapp{
+    left: 0;
+}

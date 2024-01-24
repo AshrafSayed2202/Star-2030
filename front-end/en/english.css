@@ -30,6 +30,50 @@ section.landing.switch{
     transform: translateX(-50%);
 }
 .landing p{
+    font-family:'La Belle Aurore', cursive;
     transform: translateX(-50%);
     left: 25%;
+}
+.about-header{
+    font-family:'La Belle Aurore', cursive;
+}
+.about-header::after{
+    left: 30%;
+}
+.about-paragraph{
+    font-family: 'Abel', sans-serif;
+}
+.about-quote{
+    font-family: 'Abel', sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-btn{
+    font-family: 'Abel', sans-serif;
+}
+.contact-us1 h1,
+.contact-us1 h2{
+    font-family: 'Abel', sans-serif;
+}
+.contact-card{
+    transform: translateX(-120%);
+}
+.visit-card{
+    transform: translateX(-120%);
+}
+.form-card{
+    transform: translateX(120%);
+}
+.contact-cards,
+.form-card{
+    font-family: 'Abel', sans-serif;
+}
+.contact-phone::before,
+.contact-email::before,
+.visit-text::before,
+.contact-phone a.whatsapp{
+    transform: translateX(-120%);
+}
+.contact-phone a.whatsapp{
+    right: 0;
 }

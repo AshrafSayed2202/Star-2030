@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/contact.css">
+    <link rel="stylesheet" href="/front-end/ar/arabic.css">
+    <link rel="stylesheet" href="/front-end/main.css">
+    <link rel="stylesheet" href="/front-end/normalize.css">
+    <link rel="icon" href="/front-end/assets/small-logo.svg">
+    <title>Star 2030</title>
+    <script>
+        localStorage.setItem('sitelang','ar')
+        localStorage.setItem('page','contact');
+    </script>
+</head>
+<body>
+    <nav class="trans-nav">
+        <figure class="nav-logo"></figure>
+        <ul class="nav-list">
+            <li data-page="">الرئيسية</li>
+            <li data-page="services">الخدمات</li>
+            <li data-page="news">آخر الاخبار</li>
+            <li data-page="customers">عملائنا</li>
+            <li data-page="about">من نحن؟</li>
+            <li class="active" data-page="contact">تواصل معنا</li>
+        </ul>
+        <span id="lang-btn">
+            <span style="padding-right: 6px;">EN</span>
+            <span><figure class="globe-icon"></figure>AR</span>
+        </span>
+    </nav>
+    <section class="contact-us1">
+        <h1>بحاجة الى مزيد من التفاصيل؟</h1>
+        <h2>اتصل بنا الآن</h2>
+        <span class="contact-arrow-btn"></span>
+    </section>
+    <section class="contact-us2">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <p class="card-header">اتصل بنا</p>
+                    <p class="card-title">تواصل معنا عبر الهاتف أو البريد الإلكتروني أو واتساب في أي وقت</p>
+                    <div class="abbas">
+                        <p class="name">عباس بيومي</p>
+                        <div class="contact-phone">الهاتف: <span style="direction: ltr;">+20 122 238 8715</span><a class="whatsapp" href="https://wa.me/+201222388715" target="_blank"></a></div>
+                        <div class="contact-email">البريد الالكتروني: <a href="mailto:abbas@star-headrest.com">abbas@star-headrest.com</a></div>
+                    </div>
+                    <div class="saif">
+                        <p class="name">سيف سليمان</p>
+                        <div class="contact-phone">الهاتف: <span style="direction: ltr;">+20 100 502 9533</span><a class="whatsapp" href="https://wa.me/+201005029533" target="_blank"></a></div>
+                        <div class="contact-email">البريد الالكتروني: <a href="mailto:saif@star-headrest.com">saif@star-headrest.com</a></div>
+                    </div>
+                </div>
+                <div class="visit-card">
+                    <p class="card-header">زورنا</p>
+                    <p class="card-title">أنت دائما موضع ترحيب</p>
+                    <p class="visit-text">2 شارع عوني , مصر القديمة. القاهرة - مصر.</p>
+                </div>
+            </div>
+            <div class="form-card">
+                <p class="card-header">راسلنا</p>
+                <p class="card-title">أخبرنا المزيد عنك، وسنتواصل معك قريبًا.</p>
+                <form action="" id="contact-form">
+                    <div class="personal">
+                        <div class="input-field">
+                            <label for="name">الاسم</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-field">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">عنوان البريد الالكتروني</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <label for="text-area">رسالتك:</label>
+                        <textarea type="text" name="text-area" id="text-area" rows="7" cols="50"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="إرسال" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/front-end/script.js"></script>
+<script src="/front-end/contact.js"></script>
+</html>

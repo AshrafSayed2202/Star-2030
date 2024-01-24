@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/contact.css">
+    <link rel="stylesheet" href="/front-end/en/english.css">
+    <link rel="stylesheet" href="/front-end/main.css">
+    <link rel="stylesheet" href="/front-end/normalize.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anaheim&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link rel="icon" href="/front-end/assets/small-logo.svg">
+    <title>Star 2030</title>
+    <script>
+            localStorage.setItem('sitelang','en');
+            localStorage.setItem('page','contact');
+    </script>
+</head>
+<body>
+    <nav>
+        <figure class="nav-logo"></figure>
+        <ul class="nav-list">
+            <li data-page="">Home</li>
+            <li data-page="services">Services</li>
+            <li data-page="news">Latest News</li>
+            <li data-page="customers">Our Customers</li>
+            <li data-page="about">Who Are We?</li>
+            <li class="active" data-page="contact">Contact Us</li>
+        </ul>
+        </ul>
+        <span id="lang-btn">
+            <span>EN<figure class="globe-icon"></figure></span>
+            <span style="padding-left: 6px;">AR</span>
+        </span>
+    </nav>
+    <section class="contact-us1">
+        <h1>Need more Details?</h1>
+        <h2>Contact us now</h2>
+        <span class="contact-arrow-btn"></span>
+    </section>
+    <section class="contact-us2">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <p class="card-header">Contact Us</p>
+                    <p class="card-title">Reach us on Phone, E-Mail or WhatsApp at anytime</p>
+                    <div class="abbas">
+                        <p class="name">Abbas Bayoumi</p>
+                        <div class="contact-phone">Phone: <span>+20 122 238 8715</span><a class="whatsapp" href="https://wa.me/+201222388715" target="_blank"></a></div>
+                        <div class="contact-email">E-Mail: <a href="mailto:abbas@star-headrest.com">abbas@star-headrest.com</a></div>
+                    </div>
+                    <div class="saif">
+                        <p class="name">Saif Soliman</p>
+                        <div class="contact-phone">Phone: <span>+20 100 502 9533</span><a class="whatsapp" href="https://wa.me/+201005029533" target="_blank"></a></div>
+                        <div class="contact-email">E-Mail: <a href="mailto:saif@star-headrest.com">saif@star-headrest.com</a></div>
+                    </div>
+                </div>
+                <div class="visit-card">
+                    <p class="card-header">Visit Us</p>
+                    <p class="card-title">You're always welcomed</p>
+                    <p class="visit-text">2 Awni St. , Old Cairo. Cairo - Egypt.</p>
+                </div>
+            </div>
+            <div class="form-card">
+                <p class="card-header">Message Us</p>
+                <p class="card-title">Tell us more about you, & we will get in touch soon.</p>
+                <form action="" id="contact-form">
+                    <div class="personal">
+                        <div class="input-field">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">E-Mail Address</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <label for="text-area">Message:</label>
+                        <textarea type="text" name="text-area" id="text-area" rows="7" cols="50"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send"  id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/front-end/script.js"></script>
+<script src="/front-end/contact.js"></script>
+</html>

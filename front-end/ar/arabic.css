@@ -35,6 +35,9 @@ section.landing.switch{
     transform: translateX(50%);
     right: 25%;
 }
+section.landing .first-half{
+    transform: rotateY(180deg);
+}
 .about-header::after{
     right: 30%;
     transform: rotateY(180deg);

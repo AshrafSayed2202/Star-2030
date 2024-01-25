@@ -18,6 +18,9 @@ nav ul li:hover::after{
 section.landing.switch{
     transform: translateX(-50%);
 }
+.landing-text{
+    font-family: 'Abel', sans-serif;
+}
 .landing-btn{
     right: 52%;
 }

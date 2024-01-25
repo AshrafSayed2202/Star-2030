@@ -47,7 +47,7 @@
     width: fit-content;
     font-style: italic;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
 }
 .about-aside{
     width: 40%;
@@ -71,6 +71,9 @@
     font-size: 2.5em;
     color: #fff;
     left: 50%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 .circle-text{
     width: 100%;

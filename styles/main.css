@@ -95,6 +95,7 @@ span#lang-btn{
     letter-spacing: 3px;
     font-size: 2em;
     z-index: 1;
+    cursor: pointer;
 }
 .close-nav{
     color: red;

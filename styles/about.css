@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .about-landing{
     height: 100vh;
-    background-image: url(../assets/about-landing.svg);
+    background-image: url(../assets/about-landing.webp);
     background-position: center;
     background-size:cover ;
     display: flex;
@@ -24,7 +24,7 @@
 }
 .about-header::after{
     content: '';
-    background: url(../assets/about-arrow.svg) no-repeat;
+    background: url(../assets/about-arrow.webp) no-repeat;
     width: 79px;
     height: 79px;
     display: block;
@@ -60,7 +60,7 @@
     width: 540px;
     height: 540px;
     background-position: center ;
-    background-image: url('../assets/about-logo.svg');
+    background-image: url('../assets/about-logo.webp');
     background-repeat: no-repeat;
     position: relative;
     opacity: 0.2;

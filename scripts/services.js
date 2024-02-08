@@ -36,5 +36,47 @@ productImage.forEach((image)=>{
         image.classList.add('active')
         document.querySelector(`.product-images.${image.parentNode.parentNode.parentNode.classList[1]} .big-image`).style.backgroundImage = image.style.backgroundImage
     })
-    console.log();
+})
+
+function goRightImage(bigIm){
+    let currentActive = document.querySelector(`.product-images.${bigIm.parentNode.classList[1]} .image.active`)
+    let currentActiveNum = currentActive.dataset.num
+    localStorage.getItem('sitelang')=='en'?currentActiveNum == 2 ? currentActiveNum = 0 : currentActiveNum = parseInt(currentActiveNum)+1:currentActiveNum == 0 ? currentActiveNum = 2 : currentActiveNum = parseInt(currentActiveNum)-1;
+    let newActive = document.querySelector(`.product-images.${bigIm.parentNode.classList[1]} .image[data-num="${currentActiveNum}"]`);
+    currentActive.classList.remove('active')
+    newActive.classList.add('active')
+    bigIm.style.backgroundImage = newActive.style.backgroundImage
+}
+function goLeftImage(bigIm){
+    let currentActive = document.querySelector(`.product-images.${bigIm.parentNode.classList[1]} .image.active`)
+    let currentActiveNum = currentActive.dataset.num;
+    localStorage.getItem('sitelang')=='en'?currentActiveNum == 0 ? currentActiveNum = 2 : currentActiveNum = parseInt(currentActiveNum)-1:currentActiveNum == 2 ? currentActiveNum = 0 : currentActiveNum = parseInt(currentActiveNum)+1;
+    let newActive = document.querySelector(`.product-images.${bigIm.parentNode.classList[1]} .image[data-num="${currentActiveNum}"]`);
+    currentActive.classList.remove('active')
+    newActive.classList.add('active')
+    bigIm.style.backgroundImage = newActive.style.backgroundImage
+}
+
+document.querySelectorAll('.product-images .big-image').forEach((bigImage)=>{
+    bigImage.addEventListener('touchstart', handleTouchStart, false);
+    bigImage.addEventListener('touchmove', handleTouchMove, false);
+    let xDown = null;
+    function getTouches(evt) {
+        return evt.touches || evt.originalEvent.touches;
+    }
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+    }
+    function handleTouchMove(evt) {
+        if (!xDown) return;
+        const xUp = evt.touches[0].clientX;
+        const xDiff = xDown - xUp;
+        if (xDiff > 0) {
+            goRightImage(bigImage)
+        } else {
+            goLeftImage(bigImage)
+        }
+        xDown = null;
+}
 })

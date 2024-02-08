@@ -72,3 +72,6 @@ section.landing .first-half{
 #products li.active::before{
     right: 5%;
 }
+.shape2{
+    flex-direction: column-reverse;
+}

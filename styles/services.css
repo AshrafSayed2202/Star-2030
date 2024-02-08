@@ -193,3 +193,29 @@ body{
     opacity: 1;
     transform: scale(1.1)
 }
+.product-discription{
+    color: white;
+    padding: 1em 2em;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.product-discription::-webkit-scrollbar {
+    display: none;
+}
+.product-header{
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+.specifications{
+    color: #FFC700;
+    font-size: 2.25em;
+}
+.description{
+    font-size: 2em;
+    padding: 0.5em 1em;
+}
+.description li{
+    margin: 0.5em 0;
+}

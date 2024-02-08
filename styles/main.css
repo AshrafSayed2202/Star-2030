@@ -116,6 +116,15 @@ span#lang-btn{
     background-color: red;
     color: white;
 }
+.nav-footer{
+    display: none;
+    font-size: 16px;
+    background-color: rgb(0 0 0 / 43%);
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 @media (width < 1500px) {
     .nav-list{
         flex-direction: column;
@@ -132,13 +141,12 @@ span#lang-btn{
         transition: 0.6s;
         transform: translateX(100%);
     }
-    .close-nav{
-        display: block;
-    }
     .nav-list.open-and-close{
         transform: translateX(0%);
     }
-    #navHeader{
+    #navHeader,
+    .nav-footer,
+    .close-nav{
         display: block;
     }
 }

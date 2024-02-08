@@ -99,8 +99,7 @@ figure.landing-logo{
     transition: 0.3s;
 }
 .bar-code:hover{
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
 }
 .bar-code figure{
     background: url(../assets/bar-code.webp);

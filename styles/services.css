@@ -25,8 +25,11 @@ body{
     overflow: hidden;
     z-index: 1;
 }
+nav{
+    top: 2%;
+}
 .shape1.switch{
-    top: 0%;
+    top: 2%;
     height: 15vh;
     width: 86vw;
     transform: translate(-50%, 0%);

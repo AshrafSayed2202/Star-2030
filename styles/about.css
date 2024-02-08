@@ -15,7 +15,6 @@
     width: 60%;
     margin: 0% 5%;
     color: #fff;
-    gap: 3em;
 }
 .about-header{
     font-size: 3em;
@@ -24,12 +23,14 @@
 }
 .about-header::after{
     content: '';
-    background: url(../assets/about-arrow.webp) no-repeat;
-    width: 79px;
-    height: 79px;
+    background-image: url(../assets/about-arrow.webp);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
     display: block;
     position: absolute;
-    top: 40%;
+    top: -15%;
 }
 .about-paragraph{
     background: linear-gradient(269.88deg, rgba(22, 114, 127, 0.7) 0.11%, #1E425A 99.9%);

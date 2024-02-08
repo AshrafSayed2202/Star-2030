@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/main.css">
+    <link rel="stylesheet" href="/front-end/services.css">
+    <link rel="stylesheet" href="/front-end/normalize.css">
+    <link rel="stylesheet" href="/front-end/en/english.css">
+    <link rel="icon" href="/front-end/assets/small-logo.svg">
+    <title>Star 2030</title>
+    <script>
+        localStorage.setItem('sitelang','en');
+        localStorage.setItem('page','services');
+        </script>
+</head>
+<body>
+    <nav class="trans-nav">
+        <figure class="nav-logo"></figure>
+        <ul class="nav-list">
+            <span class="close-nav">X</span>
+            <li data-page="">Home</li>
+            <li class="active" data-page="services">Services</li>
+            <li data-page="news">Latest News</li>
+            <li data-page="customers">Our Customers</li>
+            <li data-page="about">Who Are We?</li>
+            <li data-page="contact">Contact Us</li>
+        </ul>
+        <p id="navHeader"></p>
+        <span id="lang-btn">
+            <span>EN<figure class="globe-icon"></figure></span>
+            <span style="padding-left: 6px;">AR</span>
+        </span>
+    </nav>
+    <section class="services-landing">
+        <div class="shape1"></div>
+        <div class="shape2">
+            <p>Our Fine</p>
+            <div>
+                <p class="colored">PRO</p>
+                <p>DUCTS</p>
+            </div>
+        </div>
+        <div class="products-table">
+            <ul id="products">
+                <li data-prod="headrest" class="active"><img src="/front-end/assets/headrests.svg" alt=""><p>Headrest Cover</p></li>
+                <li data-prod="blanket"><img src="/front-end/assets/blankets.svg" alt=""><p>Blankets</p></li>
+                <li data-prod="pillow"><img src="/front-end/assets/pillows.svg" alt=""><p>Pillows</p></li>
+                <li data-prod="pillow-case"><img src="/front-end/assets/pillows-cases.svg" alt=""><p>Pillows Cases</p></li>
+            </ul>
+            <div id="productsDescription">
+                <div class="product-discription headrest active">headrest</div>
+                <div class="product-discription blanket">blanket</div>
+                <div class="product-discription pillow">pillow</div>
+                <div class="product-discription pillow-case">pillow case</div>
+            </div>
+            <div id="productsImages">
+                <div class="product-images headrest active">
+                    <div class="big-image" style="background-image: url(/front-end/assets/products-images/headrest-0.webp);"></div>
+                    <div class="small-images">
+                        <div class="image-container"><div class="image active" data-num="0"></div></div>
+                        <div class="image-container"><div class="image" data-num="1"></div></div>
+                        <div class="image-container"><div class="image" data-num="2"></div></div>
+                    </div>
+                </div>
+                <div class="product-images blanket">
+                    <div class="big-image" style="background-image: url(/front-end/assets/products-images/blanket-0.webp);"></div>
+                    <div class="small-images">
+                        <div class="image-container"><div class="image active" data-num="0"></div></div>
+                        <div class="image-container"><div class="image" data-num="1"></div></div>
+                        <div class="image-container"><div class="image" data-num="2"></div></div>
+                    </div>
+                </div>
+                <div class="product-images pillow">
+                    <div class="big-image" style="background-image: url(/front-end/assets/products-images/pillow-0.webp);"></div>
+                    <div class="small-images">
+                        <div class="image-container"><div class="image active" data-num="0"></div></div>
+                        <div class="image-container"><div class="image" data-num="1"></div></div>
+                        <div class="image-container"><div class="image" data-num="2"></div></div>
+                    </div>
+                </div>
+                <div class="product-images pillow-case">
+                    <div class="big-image" style="background-image: url(/front-end/assets/products-images/pillow-case-0.webp);"></div>
+                    <div class="small-images">
+                        <div class="image-container"><div class="image active" data-num="0"></div></div>
+                        <div class="image-container"><div class="image" data-num="1"></div></div>
+                        <div class="image-container"><div class="image" data-num="2"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/front-end/script.js"></script>
+<script src="/front-end/services.js"></script>
+</html>

@@ -5,6 +5,9 @@
     padding-left: 6px;
     background-color: #3FAEA5;
 }
+nav{
+    padding-left: 3%;
+}
 nav ul li{
     margin-right: 32px;
 }
@@ -24,7 +27,7 @@ section.landing.switch{
     transform: rotate(180deg);
 }
 .landing-btn.switch{
-    left: 46%;
+    right: 52%;
     transform: rotate(0deg);
 }
 .plane-btn{
@@ -65,4 +68,7 @@ section.landing .first-half{
 }
 .contact-phone a.whatsapp{
     left: 0;
+}
+#products li.active::before{
+    right: 5%;
 }

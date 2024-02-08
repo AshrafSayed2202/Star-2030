@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front-end/main.css">
+    <link rel="stylesheet" href="/front-end/services.css">
+    <link rel="stylesheet" href="/front-end/normalize.css">
+    <link rel="stylesheet" href="/front-end/ar/arabic.css">
+    <link rel="icon" href="/front-end/assets/small-logo.svg">
+    <title>Star 2030</title>
+    <script>
+        localStorage.setItem('sitelang','ar')
+        localStorage.setItem('page','services');
+    </script>
+</head>
+<body>
+    <nav class="trans-nav">
+        <figure class="nav-logo"></figure>
+        <ul class="nav-list">
+            <span class="close-nav">X</span>
+            <li data-page="">الرئيسية</li>
+            <li class="active" data-page="services">الخدمات</li>
+            <li data-page="news">آخر الاخبار</li>
+            <li data-page="customers">عملائنا</li>
+            <li data-page="about">من نحن؟</li>
+            <li data-page="contact">تواصل معنا</li>
+        </ul>
+        <p id="navHeader"></p>
+        <span id="lang-btn">
+            <span style="padding-right: 6px;">EN</span>
+            <span><figure class="globe-icon"></figure>AR</span>
+        </span>
+    </nav>
+    <section class="services-landing">
+        <div class="shape1"></div>
+        <div class="shape2">
+            <p>Our Fine</p>
+            <div>
+                <p class="colored">PRO</p>
+                <p>DUCTS</p>
+            </div>
+        </div>
+        <div class="products-table">
+            <ul id="products">
+                <li data-prod="headrest" class="active"></li>
+                <li data-prod="blanket"></li>
+                <li data-prod="pillow"></li>
+                <li data-prod="pillow-case"></li>
+            </ul>
+            <div id="productsDescription"></div>
+            <div id="productsImages"></div>
+        </div>
+    </section>
+</body>
+<script src="/front-end/script.js"></script>
+<script src="/front-end/services.js"></script>
+</html>

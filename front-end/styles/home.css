@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.trans-nav::before{
+    background-color: #00224200;
+}
+.landing-conatiner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+section.landing{
+    width: 200%;
+    height: 100vh;
+    position: absolute;
+    transition: 0.6s;
+    display: flex;
+}
+section.landing .cover1,
+section.landing .cover2{
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+}
+section.landing .cover1{
+    background-image: url(/front-end//assets/landing-cover1.svg);
+}
+section.landing .cover2{
+    background-image: url(/front-end//assets/landing-cover2.svg);
+    display: flex;
+}
+section.landing .first-half{
+    background-image: url(/front-end//assets/landing-cover2-half.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 56%;
+    z-index: 0;
+    position: relative;
+}
+section.landing .second-half{
+    width: 46%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-half .head{
+    display: flex;
+}
+figure.landing-logo{
+    background-image: url(/front-end/assets/landing-logo.svg);
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+    width: 262px;
+    height: 262px;
+}
+.head span{
+    font-family: 'Audiowide', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    font-size: 4.75em;
+    align-items: center;
+}
+.landing-text{
+    font-size: 3.25em;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+}
+.landing-btn{
+    width: 4.375em;
+    height: 4.375em;
+    background-color: #1E425A;
+    border: 3px solid #3FAEA5;
+    border-radius: 50%;
+    background-image: url(/front-end/assets/landing-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+    z-index: 1;
+}
+.landing-btn:hover{
+    background-color: #1e425a80;
+}
+.bar-code{
+    background-color: #1E425A;
+    width: 60%;
+    height: 15%;
+    margin: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bar-code:hover{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.bar-code figure{
+    background: url(/front-end/assets/bar-code.svg);
+    width: 80%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+}
+.plane-btn{
+    width: 4.5em;
+    height: 4.5em;
+    background-color: #1E425A;
+    border: 3px solid #3FAEA5;
+    border-radius: 50%;
+    background-image: url(/front-end/assets/plane-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -7px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    bottom: 3%;
+}
+.landing p{
+    position: absolute;
+    color: #FFBA00;
+    font-size: 5em;
+    top: 77%;
+}
+@media (max-width:376px) {
+    section.landing .second-half{
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:700px) {
+    section.landing .first-half{
+        display: none;
+    }
+    section.landing .second-half{
+        width: 100%;
+    }
+}
+@media (max-width:1150px) {
+    .head span{
+        font-size:2.75em;
+    }
+    figure.landing-logo{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width:1400px) {
+    .landing-text{
+        font-size: 2.25em;
+    }
+}
+@media (width < 900px) {
+    .landing p{
+        font-size: 3em;
+    }
+}
+@media (width < 500px) {
+    .landing p{
+        font-size: 2em;
+    }
+}

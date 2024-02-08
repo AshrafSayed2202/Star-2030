@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/front-end/about.css">
-    <link rel="stylesheet" href="/front-end/en/english.css">
     <link rel="stylesheet" href="/front-end/main.css">
     <link rel="stylesheet" href="/front-end/normalize.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anaheim&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/front-end/en/english.css">
     <link rel="icon" href="/front-end/assets/small-logo.svg">
     <title>Star 2030</title>
     <script>
@@ -22,6 +18,7 @@
     <nav>
         <figure class="nav-logo"></figure>
         <ul class="nav-list">
+            <span class="close-nav">X</span>
             <li data-page="">Home</li>
             <li data-page="services">Services</li>
             <li data-page="news">Latest News</li>
@@ -29,7 +26,7 @@
             <li  class="active" data-page="about">Who Are We?</li>
             <li data-page="contact">Contact Us</li>
         </ul>
-        </ul>
+        <p id="navHeader"></p>
         <span id="lang-btn">
             <span>EN<figure class="globe-icon"></figure></span>
             <span style="padding-left: 6px;">AR</span>

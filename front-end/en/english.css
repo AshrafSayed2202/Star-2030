@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Audiowide&family=Bungee+Hairline&family=La+Belle+Aurore&display=swap');
 #lang-btn span:first-child{
     padding-left: 6px;
     background-color: #3FAEA5;
 }
 #lang-btn span:last-child{
     padding-right: 6px;
+}
+span#lang-btn{
+    transform: translateX(-3em);
 }
 nav ul li{
     margin-left: 32px;
@@ -25,7 +29,7 @@ section.landing.switch{
     right: 52%;
 }
 .landing-btn.switch{
-    right: 46%;
+    left: 52%;
     transform: rotate(180deg);
 }
 .plane-btn{
@@ -79,4 +83,19 @@ section.landing.switch{
 }
 .contact-phone a.whatsapp{
     right: 0;
+}
+.shape2 p{
+    font-family:'Abel', sans-serif;
+}
+.shape2 div p{
+    font-family:'Bungee Hairline', sans-serif;;
+}
+#navHeader{
+    font-family: 'Abel', sans-serif;
+}
+#products li.active::before{
+    left: 5%;
+}
+#products li p{
+    font-family:'Audiowide', sans-serif;
 }

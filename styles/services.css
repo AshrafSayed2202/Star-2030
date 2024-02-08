@@ -35,16 +35,16 @@ nav{
     transform: translate(-50%, 0%);
 }
 .shape2{
-    width: 78%;
+    width: 80%;
     height: 50%;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
     border: 3px solid #1E425A;
     border-radius: 70px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
-    background: inherit;
+    background:inherit;
     background-size: auto;
     transition:0.6s;
     display: flex;
@@ -52,18 +52,59 @@ nav{
     align-items: center;
     flex-direction: column;
 }
-.shape2.switch{
-    transform: translate(-50%,-50%) scale(0);
-}
-.shape2 p{
-    font-size: 150px;
+.shape2>p{
     color: white;
+    font-size: 150px;
 }
-.shape2 div p{
+.shape2>div>p{
+    color: white;
+    font-size: 150px;
     display: inline;
 }
 .shape2 .colored{
     color: #FFBA00;
+}
+.products-cards{
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    bottom: -23%;
+    width: 50%;
+    height: 30%;
+}
+.products-cards li{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FFDB79;
+    background-color: #1e425ab0;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+.products-cards li p{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 110%;
+}
+.products-cards li:hover{
+    transform: scale(1);
+    background-color: #1E425A;
+}
+.shape2.switch{
+    opacity: 0;
+    z-index: -1;
 }
 .products-table{
     width: 75%;

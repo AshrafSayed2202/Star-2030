@@ -1,32 +1,35 @@
 let products = document.querySelectorAll('#products li')
+let productsIcons = document.querySelectorAll('.products-cards li')
 let productsDescriptions = document.querySelectorAll('.product-discription')
 let productsImages = document.querySelectorAll('.product-images')
 let productImage = document.querySelectorAll('.image')
 
 products.forEach((product)=>{
-    productSwitch(product)
+    product.addEventListener('click',()=>{productSwitch(product)})
 });
-document.querySelector('.shape1').addEventListener('click',()=>{
-    document.querySelector('.shape1').classList.add('switch')
-    document.querySelector('.shape2').classList.add('switch')
-    document.querySelector('.products-table').classList.add('switch')
-})
+productsIcons.forEach((product)=>{
+    product.addEventListener('click',()=>{
+        document.querySelector('.shape1').classList.add('switch')
+        document.querySelector('.shape2').classList.add('switch')
+        document.querySelector('.products-table').classList.add('switch')
+        productSwitch(product)
+    })
+});
+
 
 function productSwitch(product){
-    product.addEventListener('click',()=>{
-        products.forEach((prod)=>{
-            prod.classList.remove('active')
-        })
-        productsDescriptions.forEach((prod)=>{
-            prod.classList.remove('active')
-        })
-        productsImages.forEach((prod)=>{
-            prod.classList.remove('active')
-        })
-        product.classList.add('active')
-        document.querySelector(`.product-discription.${product.dataset.prod}`).classList.add('active')
-        document.querySelector(`.product-images.${product.dataset.prod}`).classList.add('active')
+    products.forEach((prod)=>{
+        prod.classList.remove('active')
     })
+    productsDescriptions.forEach((prod)=>{
+        prod.classList.remove('active')
+    })
+    productsImages.forEach((prod)=>{
+        prod.classList.remove('active')
+    })
+    document.querySelector(`#products li[data-prod="${product.dataset.prod}"]`).classList.add('active')
+    document.querySelector(`.product-discription.${product.dataset.prod}`).classList.add('active')
+    document.querySelector(`.product-images.${product.dataset.prod}`).classList.add('active')
 }
 
 productImage.forEach((image)=>{

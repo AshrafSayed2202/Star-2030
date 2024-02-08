@@ -84,11 +84,14 @@ section.landing.switch{
 .contact-phone a.whatsapp{
     right: 0;
 }
-.shape2 p{
+.shape2>p{
     font-family:'Abel', sans-serif;
 }
-.shape2 div p{
+.shape2>div>p{
     font-family:'Bungee Hairline', sans-serif;;
+}
+.shape2 .products-cards{
+    font-family:'Audiowide', sans-serif;
 }
 #navHeader{
     font-family: 'Abel', sans-serif;

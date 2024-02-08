@@ -30,7 +30,7 @@ function productSwitch(product){
 }
 
 productImage.forEach((image)=>{
-    image.style.backgroundImage = `url(/front-end/assets/products-images/${image.parentNode.parentNode.parentNode.classList[1]}-${image.dataset.num}.webp)`
+    image.style.backgroundImage = `url(../../assets/products-images/${image.parentNode.parentNode.parentNode.classList[1]}-${image.dataset.num}.webp)`
     image.addEventListener('click',()=>{
         document.querySelectorAll(`.product-images.${image.parentNode.parentNode.parentNode.classList[1]} .image`).forEach((e)=>{e.classList.remove('active')})
         image.classList.add('active')

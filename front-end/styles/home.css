@@ -22,14 +22,14 @@ section.landing .cover2{
     background-size: cover;
 }
 section.landing .cover1{
-    background-image: url(/front-end//assets/landing-cover1.svg);
+    background-image: url(../assets/landing-cover1.svg);
 }
 section.landing .cover2{
-    background-image: url(/front-end//assets/landing-cover2.svg);
+    background-image: url(../assets/landing-cover2.svg);
     display: flex;
 }
 section.landing .first-half{
-    background-image: url(/front-end//assets/landing-cover2-half.svg);
+    background-image: url(../assets/landing-cover2-half.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -49,7 +49,7 @@ section.landing .second-half{
     display: flex;
 }
 figure.landing-logo{
-    background-image: url(/front-end/assets/landing-logo.svg);
+    background-image: url(../assets/landing-logo.svg);
     background-position: center;
     background-size: cover;
     align-self: center;
@@ -76,7 +76,7 @@ figure.landing-logo{
     background-color: #1E425A;
     border: 3px solid #3FAEA5;
     border-radius: 50%;
-    background-image: url(/front-end/assets/landing-btn.svg);
+    background-image: url(../assets/landing-btn.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-x: 1em;
@@ -103,7 +103,7 @@ figure.landing-logo{
     border-bottom-right-radius: 50px;
 }
 .bar-code figure{
-    background: url(/front-end/assets/bar-code.svg);
+    background: url(../assets/bar-code.svg);
     width: 80%;
     height: 100%;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ figure.landing-logo{
     background-color: #1E425A;
     border: 3px solid #3FAEA5;
     border-radius: 50%;
-    background-image: url(/front-end/assets/plane-btn.svg);
+    background-image: url(../assets/plane-btn.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -7px;

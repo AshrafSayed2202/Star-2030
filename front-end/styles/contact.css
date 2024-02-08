@@ -1,5 +1,5 @@
 .contact-us1{
-    background: url(/front-end//assets/contact-cover1.svg);
+    background: url(../assets/contact-cover1.svg);
     background-position: center;
     background-size: cover;
     height: 403px;
@@ -19,7 +19,7 @@
     font-weight:normal;
 }
 .contact-arrow-btn{
-    background-image: url(/front-end/assets/contact-arrow-btn.svg);
+    background-image: url(../assets/contact-arrow-btn.svg);
     background-position: center;
     background-size: cover;
     height: 75px;
@@ -34,7 +34,7 @@
     transform: translateY(180%) rotate(180deg) scale(0.7);
 }
 .contact-us2{
-    background: url(/front-end//assets/contact-cover2.svg);
+    background: url(../assets/contact-cover2.svg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -113,7 +113,7 @@
     display: block;
     width: 100%;
     height: 1em;
-    background: url(/front-end/assets/contact-plane.svg);
+    background: url(../assets/contact-plane.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -144,13 +144,13 @@
     border-radius: 8px;
 }
 .contact-phone::before{
-    background-image: url(/front-end/assets/contact-phone-icon.svg);
+    background-image: url(../assets/contact-phone-icon.svg);
 }
 .contact-email::before{
-    background-image: url(/front-end/assets/contact-email-icon.svg);
+    background-image: url(../assets/contact-email-icon.svg);
 }
 .visit-text::before{
-    background-image: url(/front-end/assets/contact-visit-icon.svg);
+    background-image: url(../assets/contact-visit-icon.svg);
 }
 .visit-text{
     text-align: center;
@@ -159,7 +159,7 @@
 }
 .contact-phone a.whatsapp{
     background-color: #1E5A41;
-    background-image: url(/front-end/assets/contact-whatsapp-icon.svg);
+    background-image: url(../assets/contact-whatsapp-icon.svg);
 }
 #contact-form{
     display: flex;

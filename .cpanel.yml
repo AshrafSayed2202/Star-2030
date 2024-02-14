@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/starhead/public_html/
     - /bin/cp -R ar $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R dashboard $DEPLOYPATH
     - /bin/cp -R en $DEPLOYPATH
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&display=swap');
+body{
+    font-family: 'Abel',sans-serif;
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: #41ada4;
+}
+.header{
+    background-color: #1E415A;
+    font-size: 4em;
+    padding: 1em;
+}
+/* login */
+.form{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.input-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+.input-field label{
+    font-size: 2em;
+}
+.input-field input{
+    border-radius: 1000px;
+    border: none;
+    padding: 1em 2em;
+    width: 50%;
+}
+.input-field input:focus{
+    outline: none;
+}
+#submit{
+    color: white;
+    background-color: #1E415A;
+    border: none;
+    border-radius: 100px;
+    width: 20%;
+    padding: 1em;
+    align-self: flex-end;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#submit:hover{
+    color: #1E415A;
+    background-color: #eee;
+}
+.return span{
+    background-color: #eee;
+    color: #1E415A;
+    border-radius: 100px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.return span:hover{
+    background-color: #1E415A;
+    color: #eee;
+}
+/* News */
+.news-container{
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    gap: 1%;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+.news-card,
+.add-new{
+    width: 24%;
+    min-width: 350px;
+    background-color: #1E425A;
+    margin-bottom: 40px;
+    border-radius: 65px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.news-card{
+    opacity: 0.8;
+}
+.add-new{
+    background-color: white;
+    color: #1E425A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    line-height: 0;
+}
+.add-new:hover{
+    background-color: #1E425A;
+    color: white;
+}
+.news-card:hover{
+    opacity: 1;
+}
+.news-image{
+    width: 80%;
+    height: 70%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 45px;
+}
+.news-text{
+
+}

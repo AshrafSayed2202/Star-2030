@@ -65,7 +65,7 @@ body{
 }
 .aside-new-card.active{
     border-left: 8px solid white;
-    filter: brightness(1px);
+    opacity: 1;
 }
 .active .aside-new-image{
     filter: blur(0px);

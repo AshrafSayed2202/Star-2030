@@ -85,3 +85,6 @@ section.landing .first-half{
 #customers-btn-right{
     display: none;
 }
+.news-container{
+    direction: ltr;
+}

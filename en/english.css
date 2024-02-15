@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Audiowide&family=Bungee+Hairline&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Actor&family=Audiowide&family=Bungee+Hairline&family=La+Belle+Aurore&family=Twinkle+Star&display=swap');
 #lang-btn span:first-child{
     padding-left: 6px;
     background-color: #3FAEA5;
@@ -113,4 +113,15 @@ section.landing.switch{
 }
 .nav-footer{
     font-family: 'Abel', sans-serif;
+}
+.customers-header{
+    font-family: "Twinkle Star", normal;
+    left: 0;
+    transform: rotate(-10deg) translateY(100%);
+}
+.customers-container{
+    left: 0%;
+}
+#customers-btn-left{
+    display: none;
 }

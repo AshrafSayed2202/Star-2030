@@ -75,3 +75,13 @@ section.landing .first-half{
 .shape2{
     flex-direction: column-reverse;
 }
+.customers-header{
+    right: 0;
+    transform: rotate(10deg) translateY(100%);
+}
+.customers-container{
+    right: 0%;
+}
+#customers-btn-right{
+    display: none;
+}

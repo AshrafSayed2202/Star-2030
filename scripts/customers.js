@@ -29,7 +29,6 @@ var customersSwipe = (e)=>{
             btnRight.style.display = 'none'
         }
     }
-    console.log(swiper);
 }
 btnRight.addEventListener('click',()=>{
     customersSwipe(-1)

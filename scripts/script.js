@@ -18,9 +18,18 @@ document.getElementById('lang-btn').onclick = ()=>{
 }
 document.querySelectorAll('.nav-list li').forEach((nav)=>{
     nav.onclick = function(e) {
-        window.window.open(`/${localStorage.getItem('sitelang')}/${nav.dataset.page}`,'_self')
+        window.open(`/${localStorage.getItem('sitelang')}/${nav.dataset.page}`,'_self')
     }
 })
+document.querySelector('figure.nav-logo').onclick = ()=>{
+    window.open(`/${localStorage.getItem('sitelang')}/`,'_self')
+}
+const circleText = document.querySelector('.circle-text');
+    circleText.innerHTML = circleText.innerHTML.split("").map(
+        (char,i)=>
+            `<span style="transform:rotate(${i * 9.2}deg)">${char}</span>`
+    ).join("")
+
 var pageHeader = document.getElementById('navHeader')
 var closeNav = document.querySelector('.close-nav')
 let pageName = ()=>{

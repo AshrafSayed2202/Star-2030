@@ -8,4 +8,5 @@ deployment:
     - /bin/cp -R en $DEPLOYPATH
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R firebase $DEPLOYPATH
     - /bin/cp  index.html $DEPLOYPATH

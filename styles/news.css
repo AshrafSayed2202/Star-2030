@@ -43,9 +43,10 @@ body{
 }
 .latest-date{
     font-size: 1.5em;
+    margin-bottom: 15px;
 }
 .latest-image{
-    width: 90%;
+    height: 90%;
 }
 .latest-text{
     font-size: 1.5em;
@@ -72,6 +73,10 @@ body{
 }
 .aside-new-card:hover{
     opacity: 1;
+}
+.aside-new-card:hover .aside-new-header,
+.aside-new-card:hover .aside-new-date{
+    text-decoration: underline;
 }
 .aside-new-image{
     width: 100%;

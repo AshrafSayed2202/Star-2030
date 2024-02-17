@@ -6,7 +6,6 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    position: absolute;
 }
 section.landing{
     width: 200%;
@@ -136,6 +135,102 @@ figure.landing-logo{
     font-size: 5em;
     top: 77%;
 }
+.home-news{
+    background-color:#011121;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.news-container{
+    position: relative;
+    top: 15vh;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.latest-new,
+.news-aside{
+    height: 100%;
+    overflow: hidden;
+    padding: 3%;
+}
+.latest-new{
+    flex: 2;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.latest-new h3{
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.news-container::after{
+    content: '';
+    background-image: url('../assets/customers-plane.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 90%;
+    top: 5%;
+    right: 36%;
+}
+.latest-header{
+    font-size: 4em;
+    cursor: pointer;
+    color: #FFC700;
+}
+.latest-header:hover{
+    text-decoration: underline;
+}
+.latest-date{
+    font-size: 1.5em;
+}
+.latest-image{
+    height: 80%;
+}
+.news-aside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aside-new-card{
+    cursor: pointer;
+    width: 100%;
+    height: calc(90% / 3);
+    padding: 1em;
+    opacity: 0.7;
+    transition: 0.3s;
+    display: flex;
+    gap: 5%;
+    background-color: #074D55;
+    border-radius: 50px;
+}
+.aside-new-card:hover,
+.aside-new-card:hover .aside-new-header,
+.aside-new-card:hover .aside-new-date{
+    text-decoration: underline;
+    opacity: 1;
+}
+.aside-new-image{
+    width: 40%;
+    transition: 0.6s;
+    border-radius: 34px;
+}
+.aside-new-header{
+    font-size: 1.5em;
+    color: #FFDB79;
+    margin: 0.5em 0;
+}
+
 @media (max-width:376px) {
     section.landing .second-half{
         justify-content: end;

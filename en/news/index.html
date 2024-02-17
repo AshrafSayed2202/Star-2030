@@ -13,6 +13,7 @@
             localStorage.setItem('sitelang','en');
             localStorage.setItem('page','news');
     </script>
+    <script type="module" src="../../scripts/newsFirebase.js"></script>
 </head>
 <body>
     <nav>
@@ -33,64 +34,9 @@
         </span>
     </nav>
     <section class="news-container">
-        <div class="latest-new">
-            <div class="latest-header">Lorem Ipsum dolor sit amet,</div>
-            <div class="latest-date">31 January 2024</div>
-            <img src="../../assets/landing-cover1.webp" alt="" class="latest-image">
-            <p class="latest-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam massa, cursus vel aliquet vitae, aliquet a orci. Morbi erat urna, viverra ut est ornare, venenatis rhoncus nisl. Morbi dolor lacus, auctor vitae porta sit amet, semper ac tellus. Cras hendrerit id ligula quis mollis. Maecenas eget mauris vulputate, varius dolor a, dictum nulla. Ut sed fringilla est, in lobortis ante. Nullam at elit porttitor, ullamcorper quam malesuada, elementum purus. Curabitur semper turpis eu efficitur imperdiet. Nulla ut lectus ac eros malesuada sagittis. Nullam suscipit gravida efficitur. Vestibulum eu tristique nunc, vel commodo justo. Nullam aliquet metus ac diam volutpat gravida non quis erat. Nulla imperdiet eros id felis laoreet dictum. Curabitur eu neque ante. Mauris sed lorem sed arcu luctus tempor vel vitae erat.</p>
-        </div>
-        <div class="news-aside">
-            <div class="aside-new-card active">
-                <img src="../../assets/landing-cover1.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-            <div class="aside-new-card">
-                <img src="../../assets/landing-cover2.webp" alt="" class="aside-new-image">
-                <div class="aside-new-header">Lorem ipsum dolor sit amet, </div>
-                <div class="aside-new-date">30 January 2024</div>
-                <p class="aside-new-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas aut dolorum nostrum velit obcaecati officia atque at placeat enim quam quibusdam, tempore impedit. Aliquid eveniet illum reiciendis quaerat ad.</p>
-            </div>
-        </div>
+        <div class="latest-new"></div>
+        <div class="news-aside"></div>
     </section>
 </body>
-<script src="../../scripts/news.js"></script>
 <script src="../../scripts/script.js"></script>
 </html>

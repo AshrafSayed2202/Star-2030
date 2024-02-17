@@ -5,6 +5,7 @@ body{
     margin: auto;
     color: white;
     background-color: #41ada4;
+    padding-bottom: 35px;
 }
 .header{
     background-color: #1E415A;
@@ -64,6 +65,7 @@ body{
     padding: 1em 2em;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 30px;
 }
 .return span:hover{
     background-color: #1E415A;
@@ -85,7 +87,7 @@ body{
     background-color: #1E425A;
     margin-bottom: 40px;
     border-radius: 65px;
-    height: 250px;
+    height: fit-content;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -100,6 +102,7 @@ body{
     align-items: center;
     font-size: 10em;
     line-height: 0;
+    height: 250px;
 }
 .add-new:hover{
     background-color: #1E425A;
@@ -110,8 +113,127 @@ body{
 }
 .news-image{
     width: 80%;
-    height: 70%;
     margin-top: 5%;
     background-color: white;
     border-radius: 45px;
+}
+
+/* POP UP */
+.popup_container{
+    position: fixed;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+.popup_window{
+    background-color: #eee;
+    width: 50%;
+    height: 80%;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:600px) {
+    .popup_window{
+        width: 80%;
+    }
+}
+.popup_inputs{
+    height: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.popup_text{
+    background-color: #5394BF;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.popup_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+    margin-top: auto;
+}
+.popup_button_confirm,.popup_button_cancel{
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+.popup_button_cancel{
+    background-color: #f44336;
+}
+.popup_button_confirm{
+    background-color: #002242;
+}
+.popup_button_cancel:hover{
+    border-top-right-radius: 5px;
+    background-color: #b4352b
+}
+.popup_button_confirm:hover{
+    border-top-left-radius: 5px;
+    background-color: #003669;
+}
+.popup-input-field{
+    width: 100%;
+    min-height: 50px;
+    background: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #5394BF;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 5px 20px;
+}
+.popup-image{
+    border-radius: 25px;
+    outline: 2px solid #5394BF;
+    transition: 0.3s;
+    width: 50%;
+    margin: 20px auto;
+}
+.popup-image:hover{
+    outline: 5px solid #5394BF;
+}
+.image-label{
+    cursor: pointer;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+.popup-input-field input,
+.popup-input-field textarea{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
 }

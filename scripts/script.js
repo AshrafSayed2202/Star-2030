@@ -30,39 +30,13 @@ const circleText = document.querySelector('.circle-text');
             `<span style="transform:rotate(${i * 9.2}deg)">${char}</span>`
     ).join("")
 
-var pageHeader = document.getElementById('navHeader')
+var burgerIcon = document.getElementById('menu_icon')
 var closeNav = document.querySelector('.close-nav')
-let pageName = ()=>{
-    if(localStorage.getItem('sitelang') == 'ar'){
-        switch (localStorage.getItem('page')) {
-            case "home":
-            return "الرئيسية"
-                break;
-            case "services":
-                return "الخدمات"
-                break;
-            case "news":
-                return "آخر الاخبار"
-                break;
-            case "customers":
-                return "عملائنا"
-                break;
-            case "about":
-                return "من نحن؟"
-                break;
-            case "contact":
-                return "تواصل معنا"
-                break;
-        }
-    }else{
-        return localStorage.getItem('page')
-    }
-}
-pageHeader.innerText = pageName()
+
 let openCloseNav = function openCloseNav(){
     document.querySelector('.nav-list').classList.toggle("open-and-close")
 }
-pageHeader.addEventListener('click',()=>{
+burgerIcon.addEventListener('click',()=>{
     openCloseNav()
 })
 closeNav.addEventListener('click',()=>{

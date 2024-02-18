@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Harmattan:wght@400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Vibes&display=swap');
 #lang-btn span:first-child{
     padding-left: 6px;
 }
@@ -75,7 +76,34 @@ section.landing .first-half{
 .shape2{
     flex-direction: column-reverse;
 }
+.about-header,
+.landing p{
+    font-family: "Aref Ruqaa", serif;
+}
+.product-header,
+.shape2 .products-cards,
+#products li p,
+.specifications{
+    font-family: "Kufam", sans-serif;
+}
+.description,
+.nav-footer,
+#navHeader,
+.shape2>p,
+.shape2>div>p,
+.contact-cards,
+.form-card,
+.about-paragraph,
+.about-quote,
+.about-btn,
+.contact-us1 h1,
+.contact-us1 h2,
+.landing-text,
+nav ul li{
+    font-family: "Harmattan", sans-serif;
+}
 .customers-header{
+    font-family: "Vibes", system-ui;
     right: 0;
     transform: rotate(10deg) translateY(100%);
 }

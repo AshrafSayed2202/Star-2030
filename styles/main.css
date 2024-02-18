@@ -15,6 +15,7 @@ nav{
     position: fixed;
     width: 86vw;
     height: 15vh;
+    min-height: 150px;
     z-index: 2;
     margin: 0 7vw;
     justify-content: space-between;
@@ -122,14 +123,29 @@ span#lang-btn{
     justify-content: center;
     align-items: center;
 }
-#navHeader{
+.menu-icon{
     display: none;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 2em;
-    z-index: 1;
+    flex-wrap: wrap;
+    width: 27px;
+    height: 15px;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
     cursor: pointer;
+}
+.menu-icon span{
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+}
+.menu-icon span:nth-child(2) {
+    width: 66.6%;
+    transition: 0.3s;
+}
+.menu-icon:hover span:nth-child(2){
+    width: 100%;
 }
 .close-nav{
     color: red;
@@ -178,14 +194,11 @@ span#lang-btn{
     .nav-list.open-and-close{
         transform: translateX(0%);
     }
-    #navHeader,
+    .menu-icon{
+        display: flex   ;
+    }
     .nav-footer,
     .close-nav{
         display: block;
-    }
-}
-@media (width < 650px) {
-    #navHeader{
-        font-size: 1.5em;
     }
 }

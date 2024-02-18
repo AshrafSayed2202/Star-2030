@@ -31,6 +31,7 @@ nav{
 .shape1.switch{
     top: 2%;
     height: 15vh;
+    min-height: 150px;
     width: 86vw;
     transform: translate(-50%, 0%);
 }

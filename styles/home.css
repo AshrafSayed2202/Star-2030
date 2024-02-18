@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Harmattan:wght@400;500;600;700&display=swap');
 .trans-nav::before{
     background-color: #00224200;
 }
@@ -149,6 +149,7 @@ figure.landing-logo{
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: "Harmattan", sans-serif;
 }
 .latest-new,
 .news-aside{

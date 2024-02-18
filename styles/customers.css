@@ -23,7 +23,7 @@
     position: absolute;
     display: flex;
     transform: translateX(0%);
-    transition: 0.4s;
+    transition: 0.8s;
     align-items: center;
     justify-content: center;
     left: 0%;

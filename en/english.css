@@ -11,7 +11,6 @@ span#lang-btn{
 }
 nav ul li{
     margin-left: 32px;
-    font-family: 'Abel', sans-serif;
 }
 nav ul li::after{
     right: 100%;
@@ -21,9 +20,6 @@ nav ul li:hover::after{
 }
 section.landing.switch{
     transform: translateX(-50%);
-}
-.landing-text{
-    font-family: 'Abel', sans-serif;
 }
 .landing-btn{
     right: 52%;
@@ -37,30 +33,15 @@ section.landing.switch{
     transform: translateX(-50%);
 }
 .landing p{
-    font-family:'La Belle Aurore', cursive;
     transform: translateX(-50%);
     left: 25%;
-}
-.about-header{
-    font-family:'La Belle Aurore', cursive;
 }
 .about-header::after{
     left: 30%;
 }
-.about-paragraph{
-    font-family: 'Abel', sans-serif;
-}
 .about-quote{
-    font-family: 'Abel', sans-serif;
     left: 50%;
     transform: translateX(-50%);
-}
-.about-btn{
-    font-family: 'Abel', sans-serif;
-}
-.contact-us1 h1,
-.contact-us1 h2{
-    font-family: 'Abel', sans-serif;
 }
 .contact-card{
     transform: translateX(-120%);
@@ -71,10 +52,6 @@ section.landing.switch{
 .form-card{
     transform: translateX(120%);
 }
-.contact-cards,
-.form-card{
-    font-family: 'Abel', sans-serif;
-}
 .contact-phone::before,
 .contact-email::before,
 .visit-text::before,
@@ -84,34 +61,37 @@ section.landing.switch{
 .contact-phone a.whatsapp{
     right: 0;
 }
-.shape2>p{
-    font-family:'Abel', sans-serif;
+#products li.active::before{
+    left: 5%;
+}
+.about-header,
+.landing p{
+    font-family:'La Belle Aurore', 'cursive';
 }
 .shape2>div>p{
     font-family:'Bungee Hairline', sans-serif;;
 }
-.shape2 .products-cards{
-    font-family:'Audiowide', sans-serif;
-}
-#navHeader{
-    font-family: 'Abel', sans-serif;
-}
-#products li.active::before{
-    left: 5%;
-}
+.product-header,
+.shape2 .products-cards,
 #products li p{
-    font-family:'Audiowide', sans-serif;
-}
-.product-header{
     font-family:'Audiowide', sans-serif;
 }
 .specifications{
     font-family:'Actor', sans-serif;
 }
-.description{
-    font-family: 'Abel', sans-serif;
-}
-.nav-footer{
+.description,
+.nav-footer,
+#navHeader,
+.shape2>p,
+.contact-cards,
+.form-card,
+.about-paragraph,
+.about-quote,
+.about-btn,
+.contact-us1 h1,
+.contact-us1 h2,
+.landing-text,
+nav ul li{
     font-family: 'Abel', sans-serif;
 }
 .customers-header{

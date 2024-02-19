@@ -1,18 +1,17 @@
 .about-landing{
-    height: 100vh;
+    position: relative;
+    top: 15vh;
+    height: 85vh;
     background-image: url(../assets/about-landing.webp);
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
     display: flex;
     overflow: hidden;
 }
 .about-text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     position: relative;
     width: 60%;
-    margin: 0% 5%;
+    margin:5%;
     color: #fff;
 }
 .about-header{
@@ -29,7 +28,7 @@
     height: 60px;
     display: block;
     position: absolute;
-    top: -15%;
+    top: -10px;
 }
 .about-paragraph{
     background: linear-gradient(269.88deg, rgba(22, 114, 127, 0.7) 0.11%, #1E425A 99.9%);
@@ -46,8 +45,7 @@
     font-size: 2em;
     width: fit-content;
     font-style: italic;
-    position: absolute;
-    bottom: 5%;
+    margin: 1em 0;
 }
 .about-aside{
     width: 40%;
@@ -64,4 +62,30 @@
     background-repeat: no-repeat;
     position: relative;
     opacity: 0.2;
+}
+@media (width < 1600px) {
+    .about-paragraph{
+        font-size: 1.75em;
+    }
+    .about-quote{
+        font-size: 1.25em;
+    }
+}
+@media (width < 1220px) {
+    .about-aside{
+        display: none;
+    }
+    .about-landing{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-text{
+        width: 95%;
+        height: 90%;
+        overflow: scroll;
+    }
+    .about-quote{
+        position: relative;
+    }
 }

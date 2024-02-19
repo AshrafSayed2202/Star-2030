@@ -37,11 +37,12 @@ section.landing.switch{
     left: 25%;
 }
 .about-header::after{
-    left: 30%;
-}
-.about-quote{
     left: 50%;
-    transform: translateX(-50%);
+}
+@media (width < 600px) {
+    .about-header::after{
+        left: 80%;
+    }
 }
 .contact-card{
     transform: translateX(-120%);

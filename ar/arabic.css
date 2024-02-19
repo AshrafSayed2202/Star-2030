@@ -43,13 +43,8 @@ section.landing .first-half{
     transform: rotateY(180deg);
 }
 .about-header::after{
-    right: 30%;
-    transform: rotateY(180deg);
-}
-.about-quote{
-    font-family: 'Abel', sans-serif;
     right: 50%;
-    transform: translateX(50%);
+    transform: rotateY(180deg);
 }
 .contact-card{
     transform: translateX(120%);

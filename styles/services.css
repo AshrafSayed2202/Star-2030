@@ -43,7 +43,7 @@ nav{
     transform: translate(-50%,-50%) scale(1);
     border: 3px solid #1E425A;
     border-radius: 70px;
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     background:inherit;
     background-size: auto;

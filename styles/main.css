@@ -58,6 +58,17 @@ figure.nav-logo{
     scale: 0.95;
     transition: 0.3s;
 }
+@media (width < 450px) {
+    figure.nav-logo{
+        width: 4.75em;
+        height: 4.75em;
+        background-size: 4.75em 4.75em;
+    }
+    .circle-text span{
+        transform-origin: 0 38px;
+        font-size: 50%;
+    }
+}
 @keyframes roundtext {
     0%{
         transform: rotate(360deg);

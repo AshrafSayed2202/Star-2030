@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .customers-header{
     color: white;
@@ -15,6 +16,12 @@
     padding: 0 1em ;
     position: absolute;
     top: 0;
+}
+@media (width < 550px) {
+    .customers-header{
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+    }
 }
 .customers-container{
     background-color: #000C1799;
@@ -43,6 +50,21 @@
     cursor: pointer;
     transform: scale(0.9);
 }
+@media (width < 1200px) {
+    .customer-card{
+        height: 60%;
+    }
+}
+@media (width < 700px) {
+    .customer-card{
+        height: 50%;
+    }
+}
+@media (width < 475px) {
+    .customer-card{
+        height: 40%;
+    }
+}
 .customer-card img:hover{
     opacity: 1;
     transform: scale(1);
@@ -63,6 +85,15 @@
     cursor: pointer;
     transition: 0.6s;
     z-index: 1;
+}
+@media (width < 1200px) {
+    .customers-btn{
+        width: 2.375em;
+        height: 2.375em;
+        background-position-x: 0.5em;
+        top: 60%;
+        background-size: 1.375em 1.375em;
+    }
 }
 .customers-btn:hover{
     background-color: #1E425A;

@@ -42,7 +42,7 @@ function createNews(newsCard){
     newHeader.innerHTML = newsCard.header
     newCard.append(newImage,newHeader)
     newCard.addEventListener('click',()=>{
-        createPopup('Edit Post:',true,'update',newsCard)
+        createPopup('Edit Post:','update',true,newsCard)
     })
     newsContainer.append(newCard)
 }

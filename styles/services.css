@@ -351,6 +351,11 @@ nav{
     .table-content{
         flex-direction: column;
     }
+    .product-images .small-images .image{
+        width: 4px;
+        height: 4px;
+        border-width: 6px;
+    }
     #productsDescription,
     #productsImages{
     width: 100%;

@@ -116,6 +116,11 @@ span#lang-btn{
     position: relative;
     font-family: 'Anaheim', sans-serif;
 }
+@media (width < 650px) {
+    span#lang-btn{
+        scale: 0.7;
+    }
+}
 #lang-btn .globe-icon{
     width: 1.6875em;
     height: 1.6875em;

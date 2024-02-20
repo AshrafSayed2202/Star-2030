@@ -10,7 +10,6 @@ document.querySelector('.contact-arrow-btn').onclick = ()=>{
             e.classList.add('switch')
         })
     }
-    document.querySelector('.contact-arrow-btn').classList.toggle('switch')
 }
 window.addEventListener('wheel',(e)=>{
     if(e.deltaY > 0 ){
@@ -18,12 +17,6 @@ window.addEventListener('wheel',(e)=>{
         document.querySelector('.contact-arrow-btn').classList.add('switch')
         document.querySelectorAll('.contact-card,.visit-card,.form-card').forEach((e)=>{
             e.classList.add('switch')
-        })
-    }else{
-        window.scroll({top:0,left:0,behavior:'smooth'})
-        document.querySelector('.contact-arrow-btn').classList.remove('switch')
-        document.querySelectorAll('.contact-card,.visit-card,.form-card').forEach((e)=>{
-            e.classList.remove('switch')
         })
     }
 })

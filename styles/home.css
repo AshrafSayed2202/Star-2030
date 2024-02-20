@@ -141,6 +141,7 @@ figure.landing-logo{
     font-family: sans-serif;
 }
 .news-container{
+    background-color:#011121;
     position: relative;
     top: 15vh;
     height: 85vh;
@@ -158,11 +159,10 @@ figure.landing-logo{
     padding: 3%;
 }
 .latest-new{
-    flex: 2;
+    width: 67%;
     transition: 0.4s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .latest-new h3{
@@ -195,10 +195,10 @@ figure.landing-logo{
     font-size: 1.5em;
 }
 .latest-image{
-    height: 80%;
+    width: 90%;
 }
 .news-aside{
-    flex: 1;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -238,6 +238,9 @@ figure.landing-logo{
         align-items: center;
         flex-direction: column;
     }
+    .aside-new-card{
+        text-align: center;
+    }
 }
 @media (max-width:700px) {
     section.landing .first-half{
@@ -245,6 +248,10 @@ figure.landing-logo{
     }
     section.landing .second-half{
         width: 100%;
+    }
+    .latest-header{
+        text-align: center;
+        font-size: 3em;
     }
 }
 @media (max-width:1150px) {
@@ -254,6 +261,33 @@ figure.landing-logo{
     figure.landing-logo{
         width: 150px;
         height: 150px;
+    }
+    .news-container{
+        flex-direction: column;
+        overflow: scroll;
+        top: unset;
+        height: unset;
+    }
+    .news-aside{
+        flex-direction: row;
+        gap:25px;
+    }
+    .latest-new,.news-aside{
+        width: 90%;
+        height: auto;
+    }
+    .aside-new-card{
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside-new-image{
+        width: 100%;
+    }
+}
+@media (700px < width < 1150px) {
+    .home-news{
+        height: unset;
     }
 }
 @media (max-width:1400px) {
@@ -266,8 +300,25 @@ figure.landing-logo{
         font-size: 3em;
     }
 }
+@media (width < 600px) {
+    .news-aside{
+        flex-wrap: wrap;
+    }
+    .aside-new-card{
+        width: 90%;
+        height: unset;
+    }
+}
 @media (width < 500px) {
     .landing p{
         font-size: 2em;
+    }
+    .latest-header{
+        font-size: 2em;
+    }
+}
+@media (width < 1600px) {
+    .news-container::after{
+        display: none;
     }
 }

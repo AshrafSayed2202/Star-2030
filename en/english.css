@@ -9,6 +9,11 @@
 span#lang-btn{
     transform: translateX(-3em);
 }
+@media (width < 500px) {
+    span#lang-btn{
+        transform: translateX(0);
+    }
+}
 nav ul li{
     margin-left: 32px;
 }

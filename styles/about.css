@@ -89,3 +89,16 @@
         position: relative;
     }
 }
+@media (width < 750px) {
+    .about-header::after{
+        display: none;
+    }
+    .about-paragraph{
+        font-size: 1.25em;
+    }
+}
+@media (width < 425px) {
+    .about-header{
+        font-size: 2.25em;
+    }
+}

@@ -70,6 +70,7 @@ section.landing .first-half{
 }
 .shape2{
     flex-direction: column-reverse;
+    justify-content: flex-end;
 }
 .about-header,
 .landing p{

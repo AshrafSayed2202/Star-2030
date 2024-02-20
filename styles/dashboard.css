@@ -237,3 +237,50 @@ body{
     font-weight: 600;
     color: #444;
 }
+@media (width < 1300px) {
+    #login{
+        width:70%;
+    }
+}
+@media (width < 775px) {
+    #login{
+        width:90%;
+    }
+    .news-container{
+        justify-content: center;
+    }
+    .news-card, .add-new{
+        width: 80%;
+    }
+}
+@media (width < 600px) {
+    .header{
+        font-size: 2.5em;
+    }
+    .input-field{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input-field input{
+        width: 70%;
+    }
+    #login{
+        width:100%;
+    }
+    #submit{
+        width: 40%;
+    }
+}
+@media (width < 400px) {
+    .add-new{
+        height: 150px;
+        font-size: 6em;
+    }
+    .news-card, .add-new{
+        min-width: 200px;
+        border-radius: 28px;
+    }
+    .news-image{
+        border-radius: 20px;
+    }
+}

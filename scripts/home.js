@@ -5,7 +5,7 @@ document.querySelector('.landing-btn').onclick = function(e){
 }
 document.querySelector('.plane-btn').addEventListener('click',(e)=>{
     setTimeout(() => {
-        window.scroll({top:document.querySelector('.home-news').offsetTop,left:0,behavior:'smooth'})
+        window.scroll({top:document.querySelector('.home-news').offsetTop-160,left:0,behavior:'smooth'})
         document.querySelector('nav').classList.remove('trans-nav') 
     }, 100);
 })
@@ -13,7 +13,7 @@ document.querySelector('.plane-btn').addEventListener('click',(e)=>{
 window.addEventListener('wheel',(e)=>{
     if(e.deltaY > 0 ){
         setTimeout(() => {
-            window.scroll({top:document.querySelector('.home-news').offsetTop,left:0,behavior:'smooth'})
+            window.scroll({top:document.querySelector('.home-news').offsetTop-160,left:0,behavior:'smooth'})
             document.querySelector('nav').classList.remove('trans-nav')
         }, 100);
     }else{
@@ -64,7 +64,7 @@ function handleTouchMove(evt) {
         }                       
     } else {
         if ( yDiff > 0 ) {
-            window.scroll({top:document.querySelector('.home-news').offsetTop,left:0,behavior:'smooth'})
+            window.scroll({top:document.querySelector('.home-news').offsetTop - 160,left:0,behavior:'smooth'})
             document.querySelector('nav').classList.remove('trans-nav')
         }
     }
@@ -84,13 +84,14 @@ function handleTouchMoveNews(evt) {
         if ( yDiff < 0 ) {
             setTimeout(() => {
                 window.scroll({top:0,left:0,behavior:'smooth'})
-                document.querySelector('nav').classList.remove('trans-nav')
+                document.querySelector('nav').classList.add('trans-nav')
             }, 100);
         }                       
     }
     xDown = null;
     yDown = null;
     evt.preventDefault();
+    console.log('DONE');
 };
 
     document.querySelector('.landing').addEventListener('touchstart', handleTouchStart, false);        

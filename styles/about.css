@@ -46,6 +46,7 @@
     width: fit-content;
     font-style: italic;
     margin: 1em 0;
+    text-align: center;
 }
 .about-aside{
     width: 40%;

@@ -20,8 +20,11 @@ nav ul li::after{
 nav ul li:hover::after{
     left: 0%;
 }
+section.landing{
+    right: 0%;
+}
 section.landing.switch{
-    transform: translateX(50%);
+    right: -100%;
 }
 .landing-btn{
     left: 52%;

@@ -137,9 +137,13 @@ figure.landing-logo{
     top: 77%;
 }
 .home-news{
-    background-color:#011121;
-    height: 100vh;
+    background-color: #011121;
+    height: 85vh;
+    padding-bottom: 35px;
     font-family: sans-serif;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .news-container{
     background-color:#011121;
@@ -253,6 +257,25 @@ figure.landing-logo{
         text-align: center;
         font-size: 3em;
     }
+    section.landing{
+        width: 100%;
+    }
+    section.landing .cover1{
+        display: none;
+    }
+    section.landing .cover2{
+        width: 100%;
+    }
+    .landing-btn{
+        display: none;
+    }
+    span.plane-btn{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .trans-nav::before{
+        background-color: #002242;
+    }
 }
 @media (max-width:1150px) {
     .head span{
@@ -264,7 +287,6 @@ figure.landing-logo{
     }
     .news-container{
         flex-direction: column;
-        overflow: scroll;
         top: unset;
         height: unset;
     }

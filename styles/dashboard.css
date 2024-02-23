@@ -213,6 +213,8 @@ body{
     transition: 0.3s;
     width: 50%;
     margin: 20px auto;
+    color: #6ba16b;
+    font-size: 16px;
 }
 .popup-image:hover{
     outline: 5px solid #5394BF;
@@ -225,6 +227,10 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 3em;
+}
+.image-label.uploaded::after{
+    content: "✅";
+    display: block;
 }
 .popup-input-field input,
 .popup-input-field textarea{

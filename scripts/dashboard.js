@@ -76,6 +76,7 @@ function createPopup(header,confirmText,type,cardObject){
     popupImageInputField.setAttribute('class','popup-image')
     type?popupImageInputField.src = cardObject.image:popupImageInputField.src = '';
     inputImage.onchange = (e)=>{
+        popupImageInputField.src = ''
         popupImageInputField.alt = e.target.files[0].name
     }
     popupImageLabel.append(popupImageInputField,inputImage)
